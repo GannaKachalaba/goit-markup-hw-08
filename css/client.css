@@ -1,0 +1,55 @@
+.section-client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  /* background: #F5F5F5; */
+}
+
+.client-list {
+  display: flex;
+  justify-content: center;
+  /* gap: 30px; */
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 170px;
+  min-height: 92px;
+  border: 1px solid var(--social-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border-color var(--transition-time);
+}
+
+.icon-client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 106px;
+  height: 60px;
+  cursor: pointer;
+  fill: var(--social-color);
+  transition: fill var(--transition-time);
+}
+
+.client-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  min-width: 170px;
+  min-height: 92px;
+  cursor: pointer;
+  /* background: #F5F5F5; */
+}
+
+.client-link:hover .icon-client,
+.client-link:focus .icon-client {
+  fill: var(--accent-color);
+}
+
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--accent-color);
+}/*# sourceMappingURL=client.css.map */
