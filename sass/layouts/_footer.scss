@@ -124,7 +124,7 @@ color: var(--accent-color);
  }
 }
 .footer__social {
-  @media screen and (max-width: 769px) {
+  @media screen and (min-width: 767px) {
   position: absolute;
   top: 5px;
   left: 458px;
@@ -161,7 +161,6 @@ margin-bottom: 20px;
 .footer__social__list {
 @media screen and (max-width: 767px) {
   margin-top: 20px;
-  margin-left: 122px;
  }
 @media screen and (max-width: 769px) {
 display: flex;
@@ -213,7 +212,7 @@ align-items: center;
   display: block;
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 51%;
   }
 }
 .footer__contact__title {

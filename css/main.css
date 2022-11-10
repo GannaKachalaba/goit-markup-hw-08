@@ -1190,7 +1190,7 @@ body.modal-open {
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (min-width: 767px) {
   .footer__social {
     position: absolute;
     top: 5px;
@@ -1237,7 +1237,6 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .footer__social__list {
     margin-top: 20px;
-    margin-left: 122px;
   }
 }
 @media screen and (max-width: 769px) {
@@ -1296,7 +1295,7 @@ body.modal-open {
     display: block;
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 51%;
   }
 }
 
