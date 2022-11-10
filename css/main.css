@@ -577,9 +577,14 @@ body.modal-open {
     padding: 0;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 769px) {
   .main-nav {
     display: flex;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .main-nav {
     padding: 0;
   }
 }
@@ -595,7 +600,7 @@ body.modal-open {
     margin: 0;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .site-nav .logo {
     margin-right: 88px;
     padding-top: 25px;
@@ -1025,8 +1030,6 @@ body.modal-open {
 }
 @media screen and (max-width: 481px) {
   .logo span {
-    padding-top: 16px;
-    padding-bottom: 16px;
     padding-left: 0;
   }
 }
@@ -1333,7 +1336,7 @@ body.modal-open {
 }
 @media screen and (min-width: 1199px) {
   .footer__contact {
-    margin-top: 20px;
+    align-items: center;
   }
 }
 
@@ -1351,17 +1354,23 @@ body.modal-open {
   border-radius: 4px;
   background: #2f303a;
 }
-@media screen and (max-width: 769px) {
+@media screen and (min-width: 768px) {
   .footer__input {
     width: 450px;
     margin-bottom: 20px;
     margin-top: 20px;
   }
 }
-@media screen and (max-width: 481px) {
+@media screen and (min-width: 480px) {
   .footer__input {
     width: 450px;
     margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    width: 358px;
   }
 }
 
