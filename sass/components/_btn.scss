@@ -20,7 +20,11 @@
   &:hover,
   &:focus {
   background-color: var(--button-color);
-}
+   }
+  @media screen and (min-width: 768px) {
+    min-width: 200px;
+    min-height: 50px;
+  }
 }
 
 

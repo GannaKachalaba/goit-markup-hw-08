@@ -104,6 +104,9 @@
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--section-bg-color);
+  @media screen and (max-width: 769px) {
+  padding: 60px 0;
+ }
 }
 
 .section__title {
