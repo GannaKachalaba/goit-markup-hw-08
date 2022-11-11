@@ -1,5 +1,7 @@
 .page-header {
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 100%;
+    height: 60px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -9,25 +11,30 @@
 }
 
 .main-nav {
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+  width: 100%;
+  padding-left: 15px;
+ }
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  padding-left: 15px;
+ }
+ @media screen and (min-width: 1200px) {
+  width: 100%;
+  height: 80px;
   display: flex;
   align-items: center;
-  @media screen and (max-width: 481px) {
-  display: inline-block;
-  padding: 0;
- }
- @media screen and (max-width: 769px) {
-  display: flex;
-  padding: 0;
- }
- @media screen and (min-width: 1199px) {
-  padding: 0;
+  padding-left: 15px;
  }
 }
 
 .site-nav .logo {
   display: flex;
   margin-right: 93px;
-  @media screen and (max-width: 481px) {
+  @media screen and (min-width: 480px) {
   display: inline-block;
   padding: 0;
   margin: 0;
@@ -42,7 +49,7 @@
 .site-nav {
 display: flex;
 align-items: center;
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
 display: inline-block;
 margin: 0;
 padding: 0;
@@ -192,11 +199,11 @@ padding: 0;
   color: var(--primary-text-color);
   text-decoration: none;
   transition: transform var(--transition-time), color var(--transition-time);
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
   font-size: 12px;
   line-height: 1.16;
    }
-    @media screen and (min-width: 1199px) {
+  @media screen and (min-width: 1200px) {
   font-size: 14px;
   line-height: 1.14;
    }
@@ -210,7 +217,7 @@ padding: 0;
 }
 
 .auth-nav .item {
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.16;
@@ -218,7 +225,7 @@ padding: 0;
   color: var(--primary-text-color);
   text-decoration: none;
   }
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: 1200px) {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -239,16 +246,18 @@ padding: 0;
 .icon-envelope {
   width: 16px;
   height: 12px;
-  margin-right: 10px;
   fill: var(--primary-text-color);
   transition: transform var(--transition-time), fill var(--transition-time);
   .auth-nav .link:hover &,
   .auth-nav .link:focus & {
   fill: var(--accent-color);
-  @media screen and (min-width: 767px) {
-    margin-right: 8px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  margin-right: 8px;
  }
-}
+  @media screen and (min-width: 1200px) {
+  margin-right: 10px;
+ }
 }
 
 .icon-smartphone {
@@ -261,7 +270,7 @@ padding: 0;
   .auth-nav .link:focus & {
   fill: var(--accent-color);
   }
-   @media screen and (min-width: 767px) {
+   @media screen and (min-width: 767px) and (max-width: 1199px) {
     margin-right: 8px;
  }
 }
@@ -283,29 +292,30 @@ padding: 0;
 }
 
 .mobil-menu {
- position: fixed;
+ position: absolute;
  top: 0;
  background-color: var(--primary-bg-color);
- width: 100vw;
- height: 100vh;
- z-index: 1;
+ width: 480px;
+ height: 796px;
+//  z-index: 1;
  padding-top: 21px;
  padding-bottom: 48px;
- padding-left: 20px;
- padding-right: 40px;
- >.conteiner {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: auto;
- }
+ padding-left: 25px;
+ padding-right: 10px;
+//  >.conteiner {
+//   height: 796px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   overflow: auto;
+//  }
 }
 .menu-close {
   display: block;
-  margin-left: 396px;
+  margin-left: auto;
   background-color: transparent;
   border: none;
+  padding: 0;
   &:focus,
   &:hover {
   fill: var(--accent-color);
@@ -322,15 +332,20 @@ padding: 0;
  }
 
 .mobil-menu__list {
-margin-bottom: 50px;
+margin-bottom: 302px;
 }
-.mobil-menu__item:not(:last-child :first-child) {
+.mobil-menu__item:not(:first-child) {
+  margin-bottom: 32px;
+}
+
+.mobil-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
 .mobil-menu__item:first-child {
 margin-bottom: 35px;
 }
+
 .mobil-menu__link {
 font-family: 'Roboto';
 font-style: normal;
@@ -375,6 +390,7 @@ line-height: 1.16;
 letter-spacing: 0.02em;
 color: #757575;
 text-decoration: none;
+
 }
 .mobil-contact__tel {
 font-family: 'Roboto';
