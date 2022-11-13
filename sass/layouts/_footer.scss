@@ -8,10 +8,18 @@
 }
 
 .content__social {
-position: relative;
+@media screen and (min-width: 1200px) { 
+display: flex;
+}
 }
 
-
+.footer__social__tab {
+  @media screen and (min-width: 768px) {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 60px;
+  }
+}
 
 .footer__logo {
 font-family: 'Raleway';
@@ -34,11 +42,9 @@ color: var(--accent-color);
 }
 
 .footer__logos {
-@media screen and (min-width: 480px) {
-width: 154px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+text-align: center;
 margin-bottom: 20px;
-margin-left: 163px;
-margin-right: 163px;
  }
 @media screen and (min-width: 768px) {
 display: block;
@@ -151,14 +157,10 @@ color: var(--accent-color);
 }
 .footer__social {
   @media screen and (min-width: 768px) {
-  position: absolute;
-  top: 5px;
-  left: 458px;
+  margin-left: 165px;
   }
   @media screen and (min-width: 1200px) {
-  position: absolute;
-  top: 0;
-  left: 25%; 
+  margin-left: 70px;
   }
 }
 
@@ -172,9 +174,7 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--primary-bg-color);
 @media screen and (min-width: 480px) {
-width: 146px;
 text-align: center;
-margin-left: 152px;
   }
 @media screen and (min-width: 768px) {
 width: 146px;
@@ -239,10 +239,11 @@ align-items: center;
   fill: var(--primary-bg-color);
 }
 .footer__form__contact {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+  margin-top: 60px
+  }
   @media screen and (min-width: 1200px) {
-  position: absolute;
-  top: 0;
-  left: 50%;
+  margin-left: 93px;
   }
 }
 
@@ -256,12 +257,10 @@ align-items: center;
   text-transform: uppercase;
   color: var(--primary-bg-color);
   @media screen and (min-width: 480px) and (max-width: 767px) {
-  margin-top: 60px;
-  margin-left: 122px;
+  text-align: center;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-  margin-top: 60px;
-  margin-left: 273px;
+  text-align: center;
   }
   @media screen and (min-width: 1200px) {
   width: 216px;
@@ -279,8 +278,8 @@ align-items: center;
   justify-content: center;
   }
   @media screen and (min-width: 1200px) {
-  // margin-top: 20px;
-  align-items: center;
+  display: flex;
+  align-items: flex-end;
   }
 }
 .footer__input {
@@ -339,15 +338,10 @@ align-items: center;
   margin-left: 125px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-  display: flex;
-  align-items: center;
-  margin-left: 276px;
+  margin-left: 265px;
   margin-right: 262px;
   }
   @media screen and (min-width: 1200px) {
-    position: absolute;
-    top: 48px;
-    left: 100%;
   
   }
 }
