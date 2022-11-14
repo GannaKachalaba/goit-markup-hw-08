@@ -12,7 +12,7 @@
 
 .main-nav {
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   width: 480px;
   // padding-left: 15px;
  }
@@ -21,6 +21,7 @@
   height: 80px;
   display: flex;
   padding-left: 15px;
+  margin: 0;
  }
  @media screen and (min-width: 1200px) {
   // width: 100%;
@@ -28,6 +29,7 @@
   display: flex;
   align-items: center;
   padding-left: 15px;
+  // margin: 0;
  }
 }
 
@@ -210,7 +212,7 @@ padding: 0;
   flex-direction: column;
   align-content: space-around;
   flex-wrap: wrap;
-  margin-left: auto;
+  margin-left: 315px;
   padding: 0;
  }
 }

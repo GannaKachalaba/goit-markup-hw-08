@@ -574,7 +574,7 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .main-nav {
     width: 480px;
   }
@@ -584,6 +584,7 @@ body.modal-open {
     height: 80px;
     display: flex;
     padding-left: 15px;
+    margin: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -794,7 +795,7 @@ body.modal-open {
     flex-direction: column;
     align-content: space-around;
     flex-wrap: wrap;
-    margin-left: auto;
+    margin-left: 315px;
     padding: 0;
   }
 }
