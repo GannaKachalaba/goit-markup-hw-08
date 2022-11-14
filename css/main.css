@@ -1128,6 +1128,7 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .content__social {
     display: flex;
+    align-items: baseline;
   }
 }
 
@@ -1337,6 +1338,8 @@ body.modal-open {
 }
 @media screen and (min-width: 1200px) {
   .footer__social-title {
+    font-size: 14px;
+    line-height: 1.14;
     width: 116px;
     margin: 12px 0 20px 0;
   }
@@ -1431,13 +1434,6 @@ body.modal-open {
     text-align: center;
   }
 }
-@media screen and (min-width: 1200px) {
-  .footer__contact__title {
-    width: 216px;
-    margin-top: 12px;
-  }
-}
-
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .footer__contact {
     flex-wrap: wrap;
