@@ -795,6 +795,7 @@ body.modal-open {
     align-content: space-around;
     flex-wrap: wrap;
     margin-left: auto;
+    padding: 0;
   }
 }
 
@@ -1130,17 +1131,21 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .footer__soc {
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__soc {
+    margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 768px) {
   .footer__social__tab {
     display: flex;
-    justify-content: flex-start;
-    margin-bottom: 60px;
+    justify-content: center;
   }
 }
 
@@ -1166,7 +1171,7 @@ body.modal-open {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .footer__logos {
     text-align: center;
     margin-bottom: 20px;
@@ -1175,7 +1180,7 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .footer__logos {
     display: block;
-    margin-left: 100px;
+    text-align: center;
     margin-bottom: 20px;
   }
 }
@@ -1186,7 +1191,7 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .footer__address {
     display: flex;
     justify-content: center;
@@ -1196,7 +1201,6 @@ body.modal-open {
   .footer__address {
     display: flex;
     justify-content: flex-start;
-    margin-left: 61px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1217,7 +1221,7 @@ body.modal-open {
   list-style: none;
   text-decoration: none;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .footer__item {
     text-align: center;
   }
@@ -1396,7 +1400,7 @@ body.modal-open {
   fill: var(--primary-bg-color);
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .footer__form__contact {
     margin-top: 60px;
   }
@@ -1417,7 +1421,7 @@ body.modal-open {
   text-transform: uppercase;
   color: var(--primary-bg-color);
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .footer__contact__title {
     text-align: center;
   }
@@ -1434,7 +1438,7 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .footer__contact {
     flex-wrap: wrap;
     justify-content: center;
@@ -1467,7 +1471,7 @@ body.modal-open {
   border-radius: 4px;
   background: #2f303a;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .footer__input {
     width: 450px;
     margin-bottom: 20px;
@@ -1508,7 +1512,7 @@ body.modal-open {
   letter-spacing: 0.06em;
   color: var(--primary-bg-color);
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .footer__contact__btn {
     display: flex;
     align-items: center;
@@ -1555,13 +1559,13 @@ body.modal-open {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/herotabimg2x.jpg");
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .section-hero {
     padding: 200px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/heroimg1x.jpg");
   }
 }
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .section-hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/heroimg2x.jpg");
   }
@@ -1585,6 +1589,22 @@ body.modal-open {
   .hero-title {
     width: 360px;
     height: 84px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    width: 696px;
+    height: 120px;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
   }
 }
 
