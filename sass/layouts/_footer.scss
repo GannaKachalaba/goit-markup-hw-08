@@ -13,6 +13,12 @@ display: flex;
 }
 }
 
+.footer__soc {
+@media screen and (min-width: 480px) and (max-width: 767px) {
+margin-bottom: 60px;
+}
+}
+
 .footer__social__tab {
   @media screen and (min-width: 768px) {
   display: flex;
@@ -60,7 +66,6 @@ margin:0 0 20px 0;
 
 .footer__address {
 @media screen and (min-width: 480px) and (max-width: 767px) {
-margin-bottom: 60px;
 display: flex;
 justify-content: center;
  }
