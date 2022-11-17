@@ -24,17 +24,15 @@ margin-bottom: 0;
 }
 
 .footer__social__tab {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
   display: flex;
   justify-content: center;
   margin-bottom: 60px;
   }
-  // @media screen and (min-width: 768px) and (max-width: 1199px) {
-  // margin-bottom: 60px;
-  // }
   @media screen and (min-width: 1200px) {
   display: flex;
   justify-content: center;
+  margin-bottom: 0;
   }
 }
 
