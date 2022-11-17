@@ -584,6 +584,7 @@ body.modal-open {
     height: 80px;
     display: flex;
     padding-left: 15px;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -779,13 +780,6 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .contact {
     display: none;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .contact {
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1147,6 +1141,11 @@ body.modal-open {
   .footer__social__tab {
     display: flex;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__social__tab {
+    margin-bottom: 60px;
   }
 }
 
